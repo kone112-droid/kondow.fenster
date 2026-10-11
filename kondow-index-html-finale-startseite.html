@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kondow Fenster- und Türensysteme – Reisbach, Niederbayern</title>
+<meta name="description" content="Kondow Fenster- und Türensysteme in Reisbach: Einbau und Austausch von Fenstern, Haustüren und Nebeneingangstüren im Raum Niederbayern. Beratung unter 0151 240 43 945." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 56'%3E%3Crect x='4' y='6' width='56' height='44' rx='4' fill='%23a7d3ff'/%3E%3Cline x1='32' y1='6' x2='32' y2='50' stroke='%23fff' stroke-width='4'/%3E%3Cline x1='4' y1='28' x2='60' y2='28' stroke='%23fff' stroke-width='4'/%3E%3C/svg%3E" />
+<style>
+  :root {
+    --blau-dunkel: #16324f;
+    --blau: #2b6ca3;
+    --blau-hell: #a7d3ff;
+    --blau-sehr-hell: #eef6fd;
+    --grau-text: #42566b;
+    --weiss: #ffffff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+    color: var(--grau-text);
+    background: var(--weiss);
+    line-height: 1.65;
+  }
+  .container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+  h1, h2, h3 { color: var(--blau-dunkel); line-height: 1.25; }
+  h2 { font-size: 1.75rem; margin-bottom: 12px; }
+  section { padding: 72px 0; }
+
+  /* ---------- Header ---------- */
+  header {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(255,255,255,.95);
+    border-bottom: 1px solid var(--blau-sehr-hell);
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; }
+  .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+  .logo-text strong { display: block; color: var(--blau-dunkel); font-size: 1.25rem; letter-spacing: .12em; }
+  .logo-text span { display: block; color: var(--blau); font-size: .8rem; letter-spacing: .04em; }
+  nav ul { display: flex; gap: 28px; list-style: none; }
+  nav a { color: var(--grau-text); text-decoration: none; font-size: .95rem; }
+  nav a:hover { color: var(--blau); }
+  @media (max-width: 720px) { nav { display: none; } }
+
+  /* ---------- Hero ---------- */
+  .hero { padding: 96px 0 88px; background: linear-gradient(180deg, var(--blau-sehr-hell) 0%, var(--weiss) 100%); text-align: center; }
+  .hero h1 { font-size: clamp(1.9rem, 4.5vw, 3rem); max-width: 720px; margin: 0 auto 18px; }
+  .hero p { max-width: 560px; margin: 0 auto 32px; font-size: 1.1rem; }
+  .cta {
+    display: inline-block; background: var(--blau-dunkel); color: #fff;
+    padding: 14px 36px; border-radius: 4px; text-decoration: none; font-weight: 600;
+    transition: background .2s;
+  }
+  .cta:hover { background: var(--blau); }
+  .cta.zweit { background: transparent; color: var(--blau-dunkel); border: 1px solid var(--blau-dunkel); margin-left: 12px; }
+  .cta.zweit:hover { background: var(--blau-sehr-hell); }
+
+  /* ---------- Leistungen ---------- */
+  .karten { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 24px; margin-top: 40px; }
+  .karte { background: var(--blau-sehr-hell); border-radius: 8px; padding: 28px 24px; }
+  .karte h3 { font-size: 1.1rem; margin-bottom: 8px; }
+  .karte p { font-size: .95rem; }
+
+  /* ---------- Über uns ---------- */
+  .ueber { display: flex; gap: 48px; align-items: center; flex-wrap: wrap; }
+  .ueber > div { flex: 1 1 320px; }
+  .bild-platz { flex: 1 1 300px; aspect-ratio: 4/3; background: var(--blau-sehr-hell); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--blau); font-size: .9rem; text-align: center; padding: 20px; }
+
+  /* ---------- Kontakt ---------- */
+  .kontakt { background: var(--blau-dunkel); color: #dbe9f7; }
+  .kontakt h2 { color: #fff; }
+  .kontakt-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px; margin-top: 36px; }
+  .kontakt-grid h3 { color: #fff; font-size: 1rem; margin-bottom: 8px; }
+  .kontakt-grid a { color: var(--blau-hell); text-decoration: none; }
+  .kontakt-grid a:hover { text-decoration: underline; }
+
+  /* ---------- Footer ---------- */
+  footer { padding: 28px 0; font-size: .85rem; border-top: 1px solid var(--blau-sehr-hell); }
+  footer ul { list-style: none; display: flex; gap: 24px; }
+  footer a { color: var(--grau-text); text-decoration: none; }
+  footer a:hover { color: var(--blau); }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Kondow Fenster- und Türensysteme",
+  "description": "Einbau, Austausch und Service von Fenstern, Haustüren und Nebeneingangstüren im Raum Niederbayern.",
+  "telephone": "+4915124043945",
+  "email": "kondow.fenster@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Am Straßäcker 13",
+    "postalCode": "94419",
+    "addressLocality": "Reisbach",
+    "addressCountry": "DE"
+  },
+  "areaServed": "Niederbayern",
+  "openingHours": "Mo-Fr 08:00-17:00"
+}
+</script>
+</head>
+<body>
+
+<header>
+  <div class="nav container">
+    <a class="logo" href="#start" aria-label="Kondow – Startseite">
+      <svg width="48" height="42" viewBox="0 0 64 56" role="img" aria-label="Kondow Logo: Fenster mit zwei Flügeln">
+        <rect x="4" y="6" width="56" height="44" rx="2" fill="#eaf5ff" stroke="#a7d3ff" stroke-width="3"/>
+        <line x1="32" y1="7.5" x2="32" y2="48.5" stroke="#a7d3ff" stroke-width="3"/>
+        <line x1="5.5" y1="28" x2="30.5" y2="28" stroke="#a7d3ff" stroke-width="2"/>
+        <line x1="33.5" y1="28" x2="58.5" y2="28" stroke="#a7d3ff" stroke-width="2"/>
+        <line x1="18" y1="7.5" x2="18" y2="26.5" stroke="#a7d3ff" stroke-width="2"/>
+        <line x1="46" y1="7.5" x2="46" y2="26.5" stroke="#a7d3ff" stroke-width="2"/>
+        <line x1="18" y1="29.5" x2="18" y2="48.5" stroke="#a7d3ff" stroke-width="2"/>
+        <line x1="46" y1="29.5" x2="46" y2="48.5" stroke="#a7d3ff" stroke-width="2"/>
+        <line x1="28" y1="24" x2="28" y2="32" stroke="#2b6ca3" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="36" y1="24" x2="36" y2="32" stroke="#2b6ca3" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-text">
+        <strong>KONDOW</strong>
+        <span>Fenster- und Türensysteme</span>
+      </span>
+    </a>
+    <nav aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="#leistungen">Leistungen</a></li>
+        <li><a href="#ueber">Über uns</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="start">
+    <div class="container">
+      <h1>Fenster und Türen – fachgerecht, sauber, termintreu.</h1>
+      <p>Ihr Betrieb für Einbau, Austausch und Service rund um Fenster und Türen – im Raum Niederbayern, von der Beratung bis zur fertigen Montage.</p>
+      <a class="cta" href="#kontakt">Kontakt aufnehmen</a>
+      <a class="cta zweit" href="#leistungen">Leistungen ansehen</a>
+    </div>
+  </section>
+
+  <section id="leistungen">
+    <div class="container">
+      <h2>Unsere Leistungen</h2>
+      <p>Kurz und knapp – das bieten wir an:</p>
+      <div class="karten">
+        <div class="karte">
+          <h3>Fenster</h3>
+          <p>Neubau, Austausch und Nachrüstung von Fenstern – inkl. Vermessung und Montage.</p>
+        </div>
+        <div class="karte">
+          <h3>Türen</h3>
+          <p>Haustüren und Nebeneingangstüren: Beratung, Lieferung und fachgerechter Einbau.</p>
+        </div>
+        <div class="karte">
+          <h3>Reparatur &amp; Service</h3>
+          <p>Austausch von Beschlägen, Dichtungen, Glas – schnelle Hilfe bei Defekten.</p>
+        </div>
+        <div class="karte">
+          <h3>Beratung</h3>
+          <p>Persönliche Vor-Ort-Beratung, unverbindliche Angebote, faire Preise.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ueber" style="background: var(--blau-sehr-hell);">
+    <div class="container ueber">
+      <div>
+        <h2>Über uns</h2>
+        <p>Kondow Fenster- und Türensysteme ist ein inhabergeführter Handwerksbetrieb aus Reisbach. Wir arbeiten mit hochwertigen Fenster- und Türsystemen und legen Wert auf eine saubere Ausführung – vom Angebot bis zur Endreinigung.</p>
+        <p style="margin-top: 14px;">Unser Einsatzgebiet ist der Raum Niederbayern. Kurze Wege, klare Absprachen und ein Ansprechpartner für alles: So verstehen wir guten Service.</p>
+      </div>
+      <div class="bild-platz">
+        Platzhalter für ein<br>Referenzfoto oder<br>Team-/Objektfoto
+      </div>
+    </div>
+  </section>
+
+  <section class="kontakt" id="kontakt">
+    <div class="container">
+      <h2>Kontakt</h2>
+      <p>Am einfachsten erreichen Sie uns telefonisch – oder schreiben Sie uns eine E-Mail.</p>
+      <div class="kontakt-grid">
+        <div>
+          <h3>Telefon</h3>
+          <a href="tel:+4915124043945">0151 240 43 945</a>
+        </div>
+        <div>
+          <h3>E-Mail</h3>
+          <a href="mailto:kondow.fenster@gmail.com">kondow.fenster@gmail.com</a>
+        </div>
+        <div>
+          <h3>Adresse</h3>
+          <p>Am Straßäcker 13<br>94419 Reisbach</p>
+        </div>
+        <div>
+          <h3>Erreichbarkeit</h3>
+          <p>Mo–Fr 8:00–17:00 Uhr</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <ul>
+      <li>© 2026 Kondow Fenster- und Türensysteme · Inhaber: Konrad Stadler</li>
+      <li><a href="rechtliches.html#impressum">Impressum</a></li>
+      <li><a href="rechtliches.html#datenschutz">Datenschutz</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
